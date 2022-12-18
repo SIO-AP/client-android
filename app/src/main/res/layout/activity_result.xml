@@ -6,94 +6,97 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/main_bakcground"
-    tools:context=".ResultActivity">
+    tools:context=".view.ResultActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="vertical"
-        android:paddingEnd="30dp"
-        android:paddingStart="30dp"
+        android:layout_height="338dp"
         android:background="#892EBE"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
 
         <TextView
             android:id="@+id/result_text_High_Score"
-            android:text="High Score: "
-            android:textSize="40sp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textAlignment="textStart"
-            android:layout_width="match_parent"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:layout_height="wrap_content" />
+            android:text="High Score: "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
 
         <TextView
             android:id="@+id/result_total_Ques"
-            android:text="Total Questions: "
-            android:textSize="30sp"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:layout_height="wrap_content" />
+            android:text="Total Questions: "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
         <TextView
             android:id="@+id/result_Correct_Ques"
-            android:text="Correct Ques: "
-            android:textSize="30sp"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:layout_height="wrap_content" />
+            android:text="Correct Ques: "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
         <TextView
             android:id="@+id/result_Wrong_Ques"
-            android:text="Wrong Ques: "
-            android:textSize="30sp"
-            android:textColor="#FFFFFF"
-            android:textAlignment="textStart"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:padding="10dp"
-            android:layout_height="wrap_content" />
+            android:text="Wrong Ques: "
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
 
 
         <LinearLayout
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:weightSum="2"
-            android:layout_height="wrap_content">
+            android:weightSum="2">
+
             <Button
                 android:id="@+id/result_bt_playAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/play_button_bg"
+                android:padding="10dp"
                 android:text="Play Again"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textStyle="bold"
-                android:layout_weight="1"
                 android:textColor="#FFFFFF"
                 android:textSize="22sp"
-                android:layout_marginEnd="10dp"
-                android:padding="10dp"
-                android:background="@drawable/play_button_bg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/result_bt_mainmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/play_button_bg"
+                android:padding="10dp"
                 android:text="Main Menu"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textStyle="bold"
-                android:layout_weight="1"
                 android:textColor="#FFFFFF"
-                android:layout_marginStart="10dp"
                 android:textSize="22sp"
-                android:padding="10dp"
-                android:background="@drawable/play_button_bg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
