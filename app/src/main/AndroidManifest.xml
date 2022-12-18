@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.infowithvijay.maingoquizagain">
+    package="com.networking.quiz">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CategoryActivity"></activity>
-        <activity android:name=".QuizActivity" />
-        <activity android:name=".PlayActivity" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.networking.quiz.view.CategoryActivity"></activity>
+        <activity android:name="com.networking.quiz.view.QuizActivity" />
+        <activity android:name="com.networking.quiz.view.PlayActivity" />
+        <activity android:name="com.networking.quiz.view.ResultActivity" />
+        <activity android:name="com.networking.quiz.view.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
